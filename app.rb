@@ -2,10 +2,25 @@ require 'json'
 
 
 class App
+
   def main
-    test_print
-    test_sorting
-    test_files
+    # test_print
+    # test_method('test string')
+    # test_sorting
+    # test_files
+    test_hash
+  end
+
+  def test_hash
+    # options = 'i have the best country in the world'
+    options = {'country': '123124'}
+    # options = ['country', 'abcd']
+    options[:country] = 'ilya' if options[:country].nil?
+    puts options
+  end
+
+  def test_method(string)
+    puts string
   end
 
   def test_files
